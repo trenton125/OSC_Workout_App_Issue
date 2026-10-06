@@ -5,6 +5,7 @@
 import React, {useState} from 'react';
 function CreateExercise() {
     const existingExercises = [
+        // Using existing exercises, can be modified
         {id: '1', name: "Bench Press"},
         {id: '2', name: "Squat"},
         {id: '3', name: "Deadlift"},
@@ -42,6 +43,7 @@ function CreateExercise() {
         setExerciseName('');
         setVariantOf('');
     };
+
     // Page for creating new exercises
     return (
         <div>
