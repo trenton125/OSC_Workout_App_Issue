@@ -1,5 +1,7 @@
 //CUSTOM EXERCISE CEN
 
+
+// Drop down for selection variant
 import React, {useState} from 'react';
 function CreateExercise() {
     const existingExercises = [
@@ -40,12 +42,13 @@ function CreateExercise() {
         setExerciseName('');
         setVariantOf('');
     };
+    // Page for creating new exercises
     return (
         <div>
             <h1>Create Exercise</h1>
             <div>
                 <label>
-                    Exercise Name:
+                    Exercise Name: 
                     <input
                         type="text"
                         value={exerciseName}
@@ -56,7 +59,7 @@ function CreateExercise() {
             </div>
             <div>
                 <label>
-                    Variant Of:
+                    Variant Of: 
                     <select
                     value={variantOf}
                     onChange={(e) => setVariantOf(e.target.value)}
