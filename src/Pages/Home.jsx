@@ -29,6 +29,9 @@ function Home() {
             >
               Begin Workout
             </button>
+            <button className="begin-button neon-green text" onClick={() => navigate('/create-exercise')}>
+              Create Exercise
+            </button>
           </div>
         </div>
 
